@@ -1,3 +1,4 @@
+import MyStack from "./pages/MyStack";
 import Hero from "./pages/Hero";
 import Life from "./pages/Life";
 import Navbar from "./pages/Navbar";
@@ -5,9 +6,10 @@ import Navbar from "./pages/Navbar";
 
 export default function App() {
   return (
-    <div id="main" className="px-2 lg:px-0">
+    <div id="main" className="md:px-0">
       <Navbar />
       <Hero/>
+      <MyStack/>
       {/* <Life/> */}
     </div>
   )
