@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <div className="hero-wrapper bg-[#f4f2ed] flex justify-center ">
-      <div className="hero-container  flex flex-col lg:flex-row mt-2 max-w-[1366px] relative px-2 md:px-4 ">
+      <div className="hero-container  flex flex-col lg:flex-row py-2 max-w-[1366px] relative px-2 md:px-4 ">
 
         <div className="hello-description  absolute top-5 left-0 font-obviously font-black flex flex-col">
           <span className="lg:text-[100px] md:text-[80px] text-[40px] ml-[10px] lg:ml-[20px] text-primary2 uppercase">HELLO</span>
