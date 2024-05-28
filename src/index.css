@@ -3,37 +3,62 @@
 @tailwind utilities;
 
 @layer base {
+    .logos:hover .logos-slide {
+        animation-play-state: paused;
+    }
 
+    .logos {
+        position: relative;
+    }
+
+    .logos::before,
+    .logos::after {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        content: "";
+        z-index: 2;
+    }
+
+    .logos::before {
+        left: -20px;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    }
+
+    .logos::after {
+        right: -20px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    }
 }
 
 @font-face {
     font-family: 'saintecolombe';
-    src: local('saintecolombe'), url(../public/fonts/Sainte-Colombe.woff2) format('woff2');
+    src: local('saintecolombe'), url(/fonts/Sainte-Colombe.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'obviously';
-    src: local('obviously'), url(../public/fonts/Obviously.woff2) format('woff2');
+    src: local('obviously'), url(/fonts/Obviously.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'balto';
-    src: local('balto'), url(../public/fonts/Balto-Light.woff2) format('woff2');
+    src: local('balto'), url(/fonts/Balto-Light.woff2) format('woff2');
 }
 
 @layer utilities {
     .animated {
-        animation: animate 4s linear infinite;
+        animation: 35s slide infinite linear;
     }
 
-    @keyframes animate {
-        0% {
-            transform: translateX(100%)
+    @keyframes slide {
+        from {
+            transform: translateX(0)
         }
 
-        100% {
-            transform: translateY(-100);
+        to {
+            transform: translateX(-100%);
         }
     }
 }
-
