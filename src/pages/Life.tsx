@@ -78,12 +78,12 @@ const Life = () => {
               <div className="info flex flex-row gap-6">
                 <span onClick={() => openInNewTab("https://www.linkedin.com/in/sanuja-gayantha-630115201/")} className="flex flex-row items-center gap-1 cursor-pointer">
                   <img src="/img/linkedin.svg" alt="" srcSet="" className="w-4 h-4" />
-                  <span className="font-balto text-[14px]">LinkedIn</span>
+                  <span className="font-obviously text-[8px]">LinkedIn</span>
                 </span>
 
                 <span onClick={() => openInNewTab("https://github.com/sanuja-gayantha")} className="flex flex-row items-center gap-1 cursor-pointer">
                   <img src="/img/github.svg" alt="" srcSet="" className="w-4 h-4" />
-                  <span className="font-balto text-[14px]">GitHub</span>
+                  <span className="font-obviously text-[8px]">GitHub</span>
                 </span>
               </div>
 
