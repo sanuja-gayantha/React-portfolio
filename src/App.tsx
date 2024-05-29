@@ -1,3 +1,5 @@
+import Contact from "./pages/Contact";
+import Experience from "./pages/Experience";
 import Hero from "./pages/Hero";
 import Life from "./pages/Life";
 import Navbar from "./pages/Navbar";
@@ -12,9 +14,10 @@ export default function App() {
       <Navbar />
       <Hero />
       <TecStack />
-      {/* <TechStackInfo /> */}
       <Life />
       <Projects/>
+      <Experience/>
+      <Contact/>
 
     </div>
   )
