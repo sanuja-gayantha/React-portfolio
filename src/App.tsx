@@ -1,6 +1,7 @@
 import Hero from "./pages/Hero";
 import Life from "./pages/Life";
 import Navbar from "./pages/Navbar";
+import Projects from "./pages/Projects";
 import TecStack from "./pages/TecStack";
 import TechStackInfo from "./pages/TechStackInfo";
 
@@ -13,6 +14,7 @@ export default function App() {
       <TecStack />
       {/* <TechStackInfo /> */}
       <Life />
+      <Projects/>
 
     </div>
   )

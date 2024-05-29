@@ -14,7 +14,7 @@ const Life = () => {
 
   return (
     <div className="life-wrapper bg-[#fff9ee] flex justify-center ">
-      <div className="life-container flex flex-col max-w-[1366px] px-2 py-[50px] md:px-4  w-full">
+      <div className="life-container flex flex-col max-w-[1366px] px-2 py-[50px] lg:py-[120px] md:px-4  w-full">
 
 
         <div className="life-content flex lg:flex-row flex-col gap-4">
@@ -35,8 +35,8 @@ const Life = () => {
               <div className="frontend-stack flex flex-col gap-3">
                 <span className="uppercase font-obviously text-[10px]">frontend </span>
                 <div className="stack flex flex-row flex-wrap gap-1">
-                  {TechStack_frontend.map((tech) => (
-                    <span className="bg-slate-800 rounded p-1 font-obviously text-[8px] text-white ">
+                  {TechStack_frontend.map((tech, index) => (
+                    <span key={index} className="bg-slate-800 rounded p-1 font-obviously text-[8px] text-white ">
                       {tech}
                     </span>
                   ))}
@@ -46,8 +46,8 @@ const Life = () => {
               <div className="backend-stack flex flex-col gap-3">
                 <span className="uppercase font-obviously text-[10px]">backend </span>
                 <div className="stack flex flex-row gap-1 flex-wrap">
-                  {TechStack_backend.map((tech) => (
-                    <span className="bg-slate-800 rounded p-1 font-obviously text-[8px] text-white ">
+                  {TechStack_backend.map((tech, index) => (
+                    <span key={index} className="bg-slate-800 rounded p-1 font-obviously text-[8px] text-white ">
                       {tech}
                     </span>
                   ))}
@@ -57,8 +57,8 @@ const Life = () => {
               <div className="tools flex flex-col gap-3">
                 <span className="uppercase font-obviously text-[10px]">development tools</span>
                 <div className="stack flex flex-row gap-1 flex-wrap">
-                  {Tools.map((tech) => (
-                    <span className="bg-slate-800 rounded p-1 font-obviously text-[8px] text-white ">
+                  {Tools.map((tech, index) => (
+                    <span key={index} className="bg-slate-800 rounded p-1 font-obviously text-[8px] text-white ">
                       {tech}
                     </span>
                   ))}

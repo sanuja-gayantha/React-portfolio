@@ -10,7 +10,7 @@
     .logos {
         position: relative;
     }
-
+/* 
     .logos::before,
     .logos::after {
         position: absolute;
@@ -29,7 +29,7 @@
     .logos::after {
         right: -20px;
         background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-    }
+    } */
 }
 
 @font-face {
