@@ -1,14 +1,14 @@
 import React from 'react'
 
-const ProjectItem = ({projectItem}) => {
+const ProjectItem = ({ projectItem }) => {
 
     const openInNewTab = (url: string): void => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
         if (newWindow) newWindow.opener = null
     }
 
-    return ( 
-        <div className="project-item h-[532px] w-[400px] flex flex-col p-3 gap-4" style={{backgroundColor: projectItem.bgColor, color: projectItem.textColor}}>
+    return (
+        <div className="project-item h-[532px] w-[400px] flex flex-col p-3 gap-4" style={{ backgroundColor: projectItem.bgColor, color: projectItem.textColor }}>
             <div onClick={() => openInNewTab(projectItem.demoUrl)} className="image basis-2/3 image lg:w-auto lg:h-80 h-60 w-auto overflow-hidden">
                 <img src={projectItem.imageUrl} alt="" srcSet="" className="w-full h-auto object-contain cursor-pointer" />
             </div>
@@ -22,7 +22,16 @@ const ProjectItem = ({projectItem}) => {
                         <span className="font-obviously text-[10px]">GitHub</span>
                     </span>
 
+
                 </div>
+                <div className="stack flex flex-row gap-1 flex-wrap">
+                    {projectItem.techStack.map((tech: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined, index: React.Key | null | undefined) => (
+                        <span key={index} className="bg-slate-800 rounded p-1 font-obviously text-[8px] text-white ">
+                            {tech}
+                        </span>
+                    ))}
+                </div>
+
                 <div className="description font-balto text-[16px]  font-medium">
                     {projectItem.desc2}
                 </div>
