@@ -3,7 +3,10 @@ import ProjectItem from '../components/ProjectItem'
 import projectItemsList from '../data/service_data'
 
 const Projects = () => {
-
+  const openInNewTab = (url: string): void => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
 
   return (
     <div className="projects-wrapper bg-[#ffeeee] flex justify-center ">
@@ -15,7 +18,7 @@ const Projects = () => {
           ))}
 
         </div>
-
+        <span onClick={() => openInNewTab("https://github.com/sanuja-gayantha")} className="uppercase font-obviously cursor-pointer text-[12px] justify-center flex mt-4">See more ...</span>
       </div>
     </div>
   )
