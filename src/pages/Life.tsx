@@ -14,13 +14,19 @@ const Life = () => {
 
   return (
     <div className="life-wrapper bg-[#fff9ee] flex justify-center ">
-      <div className="life-container flex flex-col max-w-[1366px] px-2 py-[50px] lg:py-[120px] md:px-4  w-full">
-
+      <div className="life-container flex flex-col max-w-[1366px] px-2 py-[50px] lg:py-[100px] md:px-4  w-full">
+        <div className="title font-saintecolombe text-[65px] md:text-[148px] lg:text-[176px] text-[#32512a] text-center">Life</div>
 
         <div className="life-content flex lg:flex-row flex-col gap-4">
 
+          <div className="right basis-1/2 flex flex-col items-end">
+            <div className="img-container flex flex-col max-w-[500px]">
+              <img src="/img/me.webp" alt="sanuja's face image" srcSet="" className="" />
+            </div>
+
+          </div>
+
           <div className="left flex basis-1/2 flex-col">
-            <div className="title font-saintecolombe text-[65px] md:text-[148px] lg:text-[176px] text-[#32512a] ">Life</div>
 
             <span className="font-obviously text-[14px] mb-3">I describe myself as a self-learning, and passionate developer who loves coding and designing. My journey with technology began in my early days when I first started working with computers.</span>
 
@@ -66,12 +72,6 @@ const Life = () => {
               </div>
 
             </div>
-          </div>
-
-          <div className="right basis-1/2 ">
-            <div className="img-container flex flex-col">
-              <img src="/img/me.webp" alt="sanuja's face image" srcSet="" className="" />
-            </div>
 
             <div className="social flex flex-col gap-3 mt-5 ">
               <span className="uppercase font-obviously text-[10px]">my social</span>
@@ -89,6 +89,7 @@ const Life = () => {
 
             </div>
           </div>
+
 
         </div>
 

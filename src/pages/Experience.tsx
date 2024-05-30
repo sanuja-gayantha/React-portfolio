@@ -9,9 +9,9 @@ const Experience = () => {
 
   return (
     <div className="experience-wrapper bg-[#6d4bf4] flex justify-center ">
-      <div className="experience-container flex flex-col max-w-[1366px] px-2 py-[50px] lg:py-[120px] md:px-4  w-full text-[#ffffff]">
+      <div className="experience-container flex flex-col max-w-[1366px] px-2 py-[50px] lg:py-[100px] md:px-4  w-full text-[#ffffff]">
 
-        <div className="title font-saintecolombe text-[65px] md:text-[148px] lg:text-[176px] ">Experience</div>
+        <div className="title font-saintecolombe text-[65px] md:text-[148px] lg:text-[176px] text-center">Experience</div>
         <div className="experience-info flex flex-col lg:flex-row gap-16 mt-3">
 
           <div className="work basis-1/2">
