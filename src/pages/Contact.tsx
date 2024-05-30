@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Button from '../components/Button'
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineMailLock } from "react-icons/md";
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
 
   const [inputs, setInputs] = useState({});
+  const form = useRef();
 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
     const name = e.target.name;
@@ -16,7 +19,19 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setInputs({})
-    console.log(inputs)
+
+    emailjs
+    .sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, form.current, {
+      publicKey: import.meta.env.VITE_YOUR_PUBLIC_KEY,
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      },
+    );
   }
 
   return (
@@ -54,14 +69,14 @@ const Contact = () => {
 
           </div>
 
-          <div className="right basis-1/2 font-obviously " onSubmit={handleSubmit}>
-            <form className="flex flex-col gap-4">
+          <div className="right basis-1/2 font-obviously ">
+            <form ref={form}  onSubmit={handleSubmit} className="flex flex-col gap-4">
 
               <div className="names flex flex-row gap-10 ">
                 <div className="first-name basis-1/2 flex flex-col gap-1">
                   <label htmlFor="first-name" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">First name</label>
                   <input 
-                    value={inputs.firstname || ""}
+                    value={inputs?.firstname || ""}
                     onChange={handleChange} 
                     type="text" 
                     id="firstname" 
@@ -72,7 +87,7 @@ const Contact = () => {
                 <div className="last-name basis-1/2 flex flex-col gap-1">
                   <label htmlFor="last-name" className="block font-semibold text-[12px]">Last name</label>
                   <input 
-                    value={inputs.lastname || ""}
+                    value={inputs?.lastname || ""}
                     onChange={handleChange} 
                     type="text" 
                     id="lastname" 
@@ -84,7 +99,7 @@ const Contact = () => {
               <div className="company flex flex-col gap-1">
                 <label htmlFor="company" className="block font-semibold text-[12px]">Company</label>
                 <input 
-                  value={inputs.company || ""}
+                  value={inputs?.company || ""}
                   onChange={handleChange} 
                   type="text" 
                   id="company" 
@@ -95,7 +110,7 @@ const Contact = () => {
               <div className="email flex flex-col gap-1">
                 <label htmlFor="email" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
                 <input 
-                  value={inputs.email || ""}
+                  value={inputs?.email || ""}
                   onChange={handleChange} 
                   type="email" 
                   id="email" 
@@ -106,7 +121,7 @@ const Contact = () => {
               <div className="phone flex flex-col gap-1">
                 <label htmlFor="phone" className="block font-semibold text-[12px]">Phone number</label>
                 <input 
-                  value={inputs.phone || ""}
+                  value={inputs?.phone || ""}
                   onChange={handleChange} 
                   type="tel" 
                   id="phone" 
@@ -117,7 +132,7 @@ const Contact = () => {
               <div className="message flex flex-col gap-1">
                 <label htmlFor="message" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">Message</label>
                 <textarea 
-                  value={inputs.message || ""}
+                  value={inputs?.message || ""}
                   onChange={handleChange} 
                   id="message" 
                   name="message" 
