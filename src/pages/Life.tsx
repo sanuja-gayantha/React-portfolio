@@ -20,7 +20,7 @@ const Life = () => {
         <div className="life-content flex lg:flex-row flex-col gap-4">
 
           <div className="left flex basis-1/2 flex-col">
-            <div className="title font-saintecolombe text-[80px] md:text-[148px] lg:text-[176px] text-[#32512a] ">Life</div>
+            <div className="title font-saintecolombe text-[65px] md:text-[148px] lg:text-[176px] text-[#32512a] ">Life</div>
 
             <span className="font-obviously text-[14px] mb-3">I describe myself as a self-learning, and passionate developer who loves coding and designing. My journey with technology began in my early days when I first started working with computers.</span>
 

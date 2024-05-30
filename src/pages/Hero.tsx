@@ -32,7 +32,7 @@ const Hero = () => {
               <span className="font-saintecolombe font-black text-[52px]">I'm <span className="text-primary">Sanuja</span></span>
               <span className="font-obviously text-[14px] mb-3">A self-motivated  Full Stack Developer & Web Scraping Expert based in <span onClick={() => openInNewTab("https://www.google.com/search?q=sri+lanka")} className="underline cursor-pointer">Sri Lanka.</span></span>
               <span className="font-obviously text-[14px]">I specialize in creating modern, responsive web applications. <span className="font-balto font-medium">Take a look around, explore my work, and feel free to reach out if you'd like to collaborate or just chat about tech.</span></span>
-              <Button/>
+              <Button value="Contact Me"/>
             </div>
 
           </div>
