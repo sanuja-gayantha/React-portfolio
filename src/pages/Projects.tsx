@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ProjectItem from '../components/ProjectItem'
 import projectItemsList from '../data/service_data'
 

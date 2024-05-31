@@ -1,5 +1,4 @@
-import React from 'react'
-import TechStackInfo from './TechStackInfo'
+
 
 const Life = () => {
 

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaReact } from "react-icons/fa";
 import { PiAngularLogo } from "react-icons/pi";
 import { FaNodeJs } from "react-icons/fa";

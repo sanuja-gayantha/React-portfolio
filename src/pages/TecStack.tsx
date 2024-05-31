@@ -1,4 +1,4 @@
-import React from 'react'
+
 import TechIcons from '../components/TechIcons'
 
 

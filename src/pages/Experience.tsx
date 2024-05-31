@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Experience = () => {
   const openInNewTab = (url: string): void => {
