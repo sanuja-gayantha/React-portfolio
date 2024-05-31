@@ -10,7 +10,8 @@ const projectItemsList = [
         ],
         bgColor:'#c9d77e',
         textColor:'#170004',
-        demoUrlStatus:true
+        demoUrlStatus:true,
+        gitHubUrlStatus:true
     },
 
     {
@@ -24,7 +25,8 @@ const projectItemsList = [
         techStack: ['Angular', 'Typescript', 'Tailwindcss', 'CSS3'],
         bgColor:'#3c6b55',
         textColor:'#fff8ee',
-        demoUrlStatus:true
+        demoUrlStatus:true,
+        gitHubUrlStatus:true
     },
     {
         projectID: 2,
@@ -38,7 +40,8 @@ const projectItemsList = [
         ],
         bgColor:'#f5f0ed',
         textColor:'#f52424',
-        demoUrlStatus:true
+        demoUrlStatus:false,
+        gitHubUrlStatus:false
     },
     {
         projectID: 3,
@@ -53,7 +56,8 @@ const projectItemsList = [
         ],
         bgColor:'#b1aaff',
         textColor:'#170004',
-        demoUrlStatus:true
+        demoUrlStatus:true,
+        gitHubUrlStatus:true
     },
 
     // {
@@ -83,7 +87,8 @@ const projectItemsList = [
         desc2:'Users can search for their desired pictures from the web and then download them.',
         bgColor:'#2d203b',
         textColor:'#fbd2ff',
-        demoUrlStatus:true
+        demoUrlStatus:true,
+        gitHubUrlStatus:true
     },
 
     {
@@ -96,7 +101,8 @@ const projectItemsList = [
         desc2:"This is a recreation of the landing page of EasyBank. Explore its user-friendly design and discover the seamless banking experience it offers.",
         bgColor:'#54457a',
         textColor:'#edebeb',
-        demoUrlStatus:false
+        demoUrlStatus:false,
+        gitHubUrlStatus:true
     },
 
 ]
