@@ -40,6 +40,7 @@ const Contact = () => {
         console.log('FAILED...', error.text);
       },
     );
+    form.current.reset();
   }
 
   return (
