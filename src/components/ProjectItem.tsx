@@ -16,7 +16,11 @@ const ProjectItem = ({ projectItem }) => {
                 <div className="title font-obviously">{projectItem.projectName}</div>
 
                 <div className="links flex flex-row gap-6">
-                    <span onClick={() => openInNewTab(projectItem.demoUrl)} className="bg-slate-800 rounded p-1 font-obviously text-[10px] text-white uppercase px-2 cursor-pointer">Live demo</span>
+                    {projectItem.demoUrlStatus ?
+                        <span onClick={() => openInNewTab(projectItem.demoUrl)} className="bg-slate-800 rounded p-1 font-obviously text-[10px] text-white uppercase px-2 cursor-pointer">Live demo</span>
+                        : ""
+                    }
+
                     <span onClick={() => openInNewTab(projectItem.githubUrl)} className="flex flex-row items-center gap-1 cursor-pointer">
                         <img src="/img/github.svg" alt="" srcSet="" className="w-4 h-4" />
                         <span className="font-obviously text-[10px]">GitHub</span>
