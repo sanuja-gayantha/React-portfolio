@@ -10,13 +10,13 @@ const Contact = () => {
   const [inputs, setInputs] = useState({});
   const form = useRef();
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     setInputs(values => ({...values, [name]: value}))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = () => {
     e.preventDefault();
     setInputs({})
 
