@@ -1,3 +1,3 @@
 # Check My portfolio 👇
 
-https://sanuja-gayantha-dev.netlify.app/
+https://sanuja-dev.netlify.app/
