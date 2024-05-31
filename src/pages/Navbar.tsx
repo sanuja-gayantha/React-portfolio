@@ -7,7 +7,7 @@ const Navbar = () => {
         {/* <div className="top-menu flex flex-row justify-between lg:px-4 px-2 items-center font-obviously font-bold "> */}
 
         <a href="" className="lg:pl-4 logo flex flex-row gap-2 justify-center items-center cursor-pointer " >
-          <img src="../../public/img/ico.svg" alt="logo" srcSet="" className="w-[30px] h-[30px]" />
+          <img src="img/ico.svg" alt="logo" srcSet="" className="w-[30px] h-[30px]" />
           <span className="text-[15px] md:inline-block hidden ">SANUJA</span>
         </a>
 
