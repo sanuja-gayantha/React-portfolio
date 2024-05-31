@@ -1,24 +1,32 @@
-import { useRef, useState } from 'react'
+import { useRef} from 'react'
 import Button from '../components/Button'
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineMailLock } from "react-icons/md";
 import emailjs from '@emailjs/browser';
 
+// interface Inputs {
+//   firstname: string;
+//   lastname?: string;
+//   company?:string;
+//   email:any;
+//   phone?:any;
+//   message:any;
+// }
 
 const Contact = () => {
 
-  const [inputs, setInputs] = useState({});
-  const form = useRef();
+  // const [inputs, setInputs] = useState<Inputs>();
+  const form: any = useRef();
 
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setInputs(values => ({...values, [name]: value}))
-  }
+  // const handleChange = (e) => {
+  //   const name = e.target.name;
+  //   const value = e.target.value;
+  //   setInputs(values => ({...values, [name]: value}))
+  // }
 
-  const handleSubmit = () => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
-    setInputs({})
+    // setInputs({})
 
     emailjs
     .sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, form.current, {
@@ -76,8 +84,8 @@ const Contact = () => {
                 <div className="first-name basis-1/2 flex flex-col gap-1">
                   <label htmlFor="first-name" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">First name</label>
                   <input 
-                    value={inputs?.firstname || ""}
-                    onChange={handleChange} 
+                    // value={inputs?.firstname || ""}
+                    // onChange={handleChange} 
                     type="text" 
                     id="firstname" 
                     name="firstname" 
@@ -87,8 +95,8 @@ const Contact = () => {
                 <div className="last-name basis-1/2 flex flex-col gap-1">
                   <label htmlFor="last-name" className="block font-semibold text-[12px]">Last name</label>
                   <input 
-                    value={inputs?.lastname || ""}
-                    onChange={handleChange} 
+                    // value={inputs?.lastname || ""}
+                    // onChange={handleChange} 
                     type="text" 
                     id="lastname" 
                     name="lastname" 
@@ -99,8 +107,8 @@ const Contact = () => {
               <div className="company flex flex-col gap-1">
                 <label htmlFor="company" className="block font-semibold text-[12px]">Company</label>
                 <input 
-                  value={inputs?.company || ""}
-                  onChange={handleChange} 
+                  // value={inputs?.company || ""}
+                  // onChange={handleChange} 
                   type="text" 
                   id="company" 
                   name="company" 
@@ -110,8 +118,8 @@ const Contact = () => {
               <div className="email flex flex-col gap-1">
                 <label htmlFor="email" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
                 <input 
-                  value={inputs?.email || ""}
-                  onChange={handleChange} 
+                  // value={inputs?.email || ""}
+                  // onChange={handleChange} 
                   type="email" 
                   id="email" 
                   name="email" 
@@ -121,8 +129,8 @@ const Contact = () => {
               <div className="phone flex flex-col gap-1">
                 <label htmlFor="phone" className="block font-semibold text-[12px]">Phone number</label>
                 <input 
-                  value={inputs?.phone || ""}
-                  onChange={handleChange} 
+                  // value={inputs?.phone || ""}
+                  // onChange={handleChange} 
                   type="tel" 
                   id="phone" 
                   name="phone" 
@@ -132,8 +140,8 @@ const Contact = () => {
               <div className="message flex flex-col gap-1">
                 <label htmlFor="message" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">Message</label>
                 <textarea 
-                  value={inputs?.message || ""}
-                  onChange={handleChange} 
+                  // value={inputs?.message || ""}
+                  // onChange={handleChange} 
                   id="message" 
                   name="message" 
                   className="border-2 border-gray-300 p-2 text-[12px] h-32 w-full focus:outline-none rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none" placeholder="Your message" required></textarea>
