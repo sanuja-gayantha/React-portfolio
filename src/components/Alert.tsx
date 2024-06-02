@@ -1,21 +1,31 @@
+import { useEffect } from "react";
 
-// const Alert = () => {
-//     return (
+interface AlertMessageInputs {
+    type: string;
+    borderColor: string;
+    bgColor: string;
+    messageTitle: string;
+    message: string;
+    removeAlert: Function;
+}
 
-//         <div  className="border-l-4 bg-red-100 border-red-500 rounded-b text-black-900 px-4 py-3 shadow-md">
-//             <div className="flex flex-col gap-1">
-//                     <p className="font-bold text-[10px]">Invalid credentials</p>
-//                     <p className="text-[8px]">Some of the values you entered do not work. Please check again.</p>
-//             </div>
-//         </div >
+const Alert = ({ type, borderColor, bgColor, messageTitle, message, removeAlert }: AlertMessageInputs) => {
+    useEffect(()=> {
+        const timeout = setTimeout(() => {
+            removeAlert();
+          }, 15000);
+          return () => clearTimeout(timeout);
+    }, [type])
 
-//         // <div  className="border-l-4 bg-red-100 border-red-500 rounded-b text-black-900 px-4 py-3 shadow-md" style={{background:}}>
-//         // <div className="flex flex-col gap-1">
-//         //         <p className="font-bold text-[10px]">Invalid credentials</p>
-//         //         <p className="text-[8px]">Some of the values you entered do not work. Please check again.</p>
-//         // </div>
-//         // </div >
-//   )
-// }
+    return (
 
-// export default Alert
+        <div className="border-l-4 rounded-b text-black-900 px-4 py-3 shadow-md" style={{ backgroundColor: bgColor, borderColor: borderColor }}>
+            <div className="flex flex-col gap-1">
+                <p className="font-bold text-[10px]">{messageTitle}</p>
+                <p className="text-[8px]">{message}</p>
+            </div>
+        </div >
+    )
+}
+
+export default Alert

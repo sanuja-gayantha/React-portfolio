@@ -1,9 +1,10 @@
-import { useRef} from 'react'
+import { useRef } from 'react'
 import Button from '../components/Button'
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineMailLock } from "react-icons/md";
 import emailjs from '@emailjs/browser';
 import Alert from '../components/Alert';
+import { useAlertContext } from '../hooks/useAlertContext';
 
 // interface Inputs {
 //   firstname: string;
@@ -14,10 +15,12 @@ import Alert from '../components/Alert';
 //   message:any;
 // }
 
+
 const Contact = () => {
 
   // const [inputs, setInputs] = useState<Inputs>();
   const form: any = useRef();
+  const { refFirstName, refEmail, refMessage, alert, showAlert }: any = useAlertContext();
 
   // const handleChange = (e) => {
   //   const name = e.target.name;
@@ -25,23 +28,30 @@ const Contact = () => {
   //   setInputs(values => ({...values, [name]: value}))
   // }
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // setInputs({})
 
-    emailjs
-    .sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, form.current, {
-      publicKey: import.meta.env.VITE_YOUR_PUBLIC_KEY,
-    })
-    .then(
-      () => {
-        console.log('SUCCESS!');
-      },
-      (error) => {
-        console.log('FAILED...', error.text);
-      },
-    );
-    form.current.reset();
+    if (!refFirstName.current.value && !refEmail.current.value && !refMessage.current.value) {
+      showAlert(true, 'danger', '#ef4444', '#fee2e2', 'Invalid credentials', 'Please fill all required fields');
+    } else {
+      emailjs
+        .sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, form.current, {
+          publicKey: import.meta.env.VITE_YOUR_PUBLIC_KEY,
+        })
+        .then(
+          () => {
+            // console.log('SUCCESS!');
+            showAlert(true, 'success', '#14b8a6', '#ccfbf1', 'Valid credentials', "Your email was sent successfully! Thank you for reaching out to me :). I'll get back to you as soon as possible.");
+          },
+          () => {
+            // console.log('FAILED...', error.text);
+            showAlert(true, 'danger', '#ef4444', '#fee2e2', 'Invalid credentials', 'Email sent faield try again. Some of the values you entered do not work. Please check again.');
+          },
+        );
+      form.current.reset();
+
+    }
   }
 
   return (
@@ -80,72 +90,75 @@ const Contact = () => {
           </div>
 
           <div className="right basis-1/2 font-obviously ">
-            <form ref={form}  onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <form ref={form} onSubmit={handleSubmit} className="flex flex-col gap-4">
 
               <div className="names flex flex-row gap-10 ">
                 <div className="first-name basis-1/2 flex flex-col gap-1">
                   <label htmlFor="first-name" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">First name</label>
-                  <input 
+                  <input
                     // value={inputs?.firstname || ""}
                     // onChange={handleChange} 
-                    type="text" 
-                    id="firstname" 
-                    name="firstname" 
+                    ref={refFirstName}
+                    type="text"
+                    id="firstname"
+                    name="firstname"
                     className="border-2 border-gray-300 p-2 text-[12px] w-full focus:outline-none rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-transparent " placeholder="Your First Name" required />
                 </div>
 
                 <div className="last-name basis-1/2 flex flex-col gap-1">
                   <label htmlFor="last-name" className="block font-semibold text-[12px]">Last name</label>
-                  <input 
+                  <input
                     // value={inputs?.lastname || ""}
                     // onChange={handleChange} 
-                    type="text" 
-                    id="lastname" 
-                    name="lastname" 
+                    type="text"
+                    id="lastname"
+                    name="lastname"
                     className="border-2 border-gray-300 p-2 text-[12px] w-full focus:outline-none rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Your Last Name" />
                 </div>
               </div>
 
               <div className="company flex flex-col gap-1">
                 <label htmlFor="company" className="block font-semibold text-[12px]">Company</label>
-                <input 
+                <input
                   // value={inputs?.company || ""}
                   // onChange={handleChange} 
-                  type="text" 
-                  id="company" 
-                  name="company" 
+                  type="text"
+                  id="company"
+                  name="company"
                   className="border-2 border-gray-300 p-2 text-[12px] w-full focus:outline-none rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Your Company Name" />
               </div>
 
               <div className="email flex flex-col gap-1">
                 <label htmlFor="email" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
-                <input 
+                <input
                   // value={inputs?.email || ""}
                   // onChange={handleChange} 
-                  type="email" 
-                  id="email" 
-                  name="email" 
+                  ref={refEmail}
+                  type="email"
+                  id="email"
+                  name="email"
                   className="border-2 border-gray-300 p-2 text-[12px] w-full focus:outline-none rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Your Email Address" required />
               </div>
 
               <div className="phone flex flex-col gap-1">
                 <label htmlFor="phone" className="block font-semibold text-[12px]">Phone number</label>
-                <input 
+                <input
                   // value={inputs?.phone || ""}
                   // onChange={handleChange} 
-                  type="tel" 
-                  id="phone" 
-                  name="phone" 
+                  type="tel"
+                  id="phone"
+                  name="phone"
                   className="border-2 border-gray-300 p-2 text-[12px] w-full focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Your Phone Number" />
               </div>
 
               <div className="message flex flex-col gap-1">
                 <label htmlFor="message" className="block font-semibold text-[12px] after:content-['*'] after:ml-0.5 after:text-red-500">Message</label>
-                <textarea 
+                <textarea
                   // value={inputs?.message || ""}
                   // onChange={handleChange} 
-                  id="message" 
-                  name="message" 
+                  ref={refMessage}
+                  id="message"
+                  name="message"
                   className="border-2 border-gray-300 p-2 text-[12px] h-32 w-full focus:outline-none rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none" placeholder="Your message" required></textarea>
               </div>
 
@@ -153,7 +166,7 @@ const Contact = () => {
               <div className="text-[10px] text-gray-600">
                 If you are not a fan of forms, you can email me at " rpsgayantha@gmail.com "
               </div>
-              <Alert/>
+              <div>{alert.show && <Alert {...alert} removeAlert={showAlert} />}</div>
 
 
             </form>

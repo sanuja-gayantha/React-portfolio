@@ -6,19 +6,23 @@ import Life from "./pages/Life";
 import Navbar from "./pages/Navbar";
 import Projects from "./pages/Projects";
 import TecStack from "./pages/TecStack";
+import { AlertProvider } from "./contaxt/AlertContaxt";
 
 
 export default function App() {
   return (
     <div id="main" className="md:px-0">
-      <Navbar />
-      <Hero />
-      <TecStack />
-      <Life />
-      <Projects/>
-      <Experience/>
-      <Contact/>
-      <Footer/>
+      <AlertProvider>
+        <Navbar />
+        <Hero />
+        <TecStack />
+        <Life />
+        <Projects />
+        <Experience />
+        <Contact />
+        <Footer />
+      </AlertProvider>
+
     </div>
   )
 }
