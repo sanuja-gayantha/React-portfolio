@@ -13,9 +13,9 @@ interface AlertInputs {
 }
 
 export const AlertProvider = ({ children}:any) => {
-    const refFirstName: any  = useRef('');
-    const refEmail: any  = useRef('');
-    const refMessage: any  = useRef('');
+    const refFirstName = useRef<any>('');
+    const refEmail  = useRef<any>('');
+    const refMessage = useRef<any>('');
     const [alert, setAlert] = useState<AlertInputs>({ show: false, type: '', borderColor:'', bgColor:'', messageTitle: '', message:''});
 
     const showAlert = (show = false, type = '', borderColor='', bgColor='', messageTitle='', message = '') => {

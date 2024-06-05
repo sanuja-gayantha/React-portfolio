@@ -7,21 +7,26 @@ import Navbar from "./pages/Navbar";
 import Projects from "./pages/Projects";
 import TecStack from "./pages/TecStack";
 import { AlertProvider } from "./contaxt/AlertContaxt";
+import { NavProvider } from "./contaxt/NavContaxt";
+import NavContent from "./pages/NavContent";
 
 
 export default function App() {
   return (
     <div id="main" className="md:px-0">
-      <AlertProvider>
-        <Navbar />
-        <Hero />
-        <TecStack />
-        <Life />
-        <Projects />
-        <Experience />
-        <Contact />
-        <Footer />
-      </AlertProvider>
+      <NavProvider>
+        <AlertProvider>
+          <NavContent />
+          <Navbar />
+          <Hero />
+          <TecStack />
+          <Life />
+          <Projects />
+          <Experience />
+          <Contact />
+          <Footer />
+        </AlertProvider>
+      </NavProvider>
 
     </div>
   )
