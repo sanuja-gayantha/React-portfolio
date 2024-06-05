@@ -2,8 +2,6 @@ import { useNavContext } from '../hooks/useNavContext';
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import NavItem from '../components/NavItem';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-
 
 const NavContent = () => {
     const navItemsList: Array<object> = [
