@@ -8,7 +8,7 @@ const Hero = () => {
   }
 
   return (
-    <div className="hero-wrapper bg-[#f4f2ed] flex justify-center ">
+    <section id='home' className="hero-wrapper bg-[#f4f2ed] flex justify-center ">
       <div className="hero-container  flex flex-col lg:flex-row py-2 max-w-[1366px] relative px-2 md:px-4 ">
 
         <div className="hello-description  absolute top-5 left-0 font-obviously font-black flex flex-col">
@@ -32,7 +32,10 @@ const Hero = () => {
               <span className="font-saintecolombe font-black text-[52px]">I'm <span className="text-primary">Sanuja</span></span>
               <span className="font-obviously text-[14px] mb-3">A self-motivated  Full Stack Developer & Web Scraping Expert based in <span onClick={() => openInNewTab("https://www.google.com/search?q=sri+lanka")} className="underline cursor-pointer">Sri Lanka.</span></span>
               <span className="font-obviously text-[14px]">I specialize in creating modern, responsive web applications. <span className="font-balto font-medium">Take a look around, explore my work, and feel free to reach out if you'd like to collaborate or just chat about tech.</span></span>
-              <Button value="Contact Me"/>
+              <a href="#contact">
+                <Button value="Contact Me" />
+              </a>
+
             </div>
 
           </div>
@@ -42,7 +45,7 @@ const Hero = () => {
 
 
 
-    </div>
+    </section>
 
 
 

@@ -2,34 +2,41 @@ import { useNavContext } from '../hooks/useNavContext';
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import NavItem from '../components/NavItem';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 
 const NavContent = () => {
     const navItemsList: Array<object> = [
         {
             id: 1,
             title: "Home",
-            bgColor:'#7ce2a5',
+            bgColor: '#7ce2a5',
+            linkValue: '#home'
         },
         {
             id: 2,
             title: "Life",
-            bgColor:'#f9ce60',
+            bgColor: '#f9ce60',
+            linkValue: '#life'
         },
 
         {
             id: 3,
             title: "Projects",
-            bgColor:'#da5a3d',
+            bgColor: '#da5a3d',
+            linkValue: '#projects'
         },
         {
             id: 4,
             title: "Experience",
-            bgColor:'#6d4bf4',
+            bgColor: '#6d4bf4',
+            linkValue: '#experience'
         },
         {
             id: 5,
             title: "Contact",
-            bgColor:'#f4f2ed',
+            bgColor: '#f4f2ed',
+            linkValue: '#contact'
         },
 
     ]
@@ -44,7 +51,7 @@ const NavContent = () => {
         <>
             {
                 show ? (
-                    <div className="nav-content-wrapper bg-[#f4f2ed] flex flex-col sticky top-0 z-50 shadow-sm h-screen">
+                    <div className="nav-content-wrapper transition-all bg-[#f4f2ed] flex flex-col sticky top-0 z-50 shadow-sm h-screen">
                         <div className="nav-content-container absolute flex flex-col w-full h-full">
 
                             <div className="top-bar max-w-[1366px] flex flex-row h-[60px] w-full justify-between p-2 md:px-4 items-center font-obviously font-bold">
@@ -68,7 +75,7 @@ const NavContent = () => {
 
                             <div className="nav-items h-full flex flex-col gap-4 lg:gap-0">
                                 {navItemsList.map((item, index) => (
-                                    <NavItem item={item} key={index} />
+                                        <NavItem item={item} key={index} />
                                 ))}
 
                             </div>

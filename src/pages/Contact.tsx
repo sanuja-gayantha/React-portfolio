@@ -55,7 +55,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="contacts-wrapper bg-[#f4f2ed] text-gray-700 flex justify-center ">
+    <section id='contact' className="contacts-wrapper bg-[#f4f2ed] text-gray-700 flex justify-center ">
       <div className="contacts-container flex flex-col max-w-[1366px] px-2 py-[50px] lg:py-[100px] md:px-4  w-full">
         <div className="title font-saintecolombe text-[65px] md:text-[148px] lg:text-[176px] text-[#32512a] text-center">Contact</div>
 
@@ -176,7 +176,7 @@ const Contact = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
 

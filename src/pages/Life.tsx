@@ -12,7 +12,7 @@ const Life = () => {
   }
 
   return (
-    <div className="life-wrapper bg-[#fff9ee] flex justify-center ">
+    <section id='life' className="life-wrapper bg-[#fff9ee] flex justify-center ">
       <div className="life-container flex flex-col max-w-[1366px] px-2 py-[50px] lg:py-[100px] md:px-4  w-full">
         <div className="title font-saintecolombe text-[65px] md:text-[148px] lg:text-[176px] text-[#32512a] text-center">Life</div>
 
@@ -94,7 +94,7 @@ const Life = () => {
 
 
       </div>
-    </div>
+    </section>
   )
 }
 
