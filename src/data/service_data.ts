@@ -95,6 +95,20 @@ const projectItemsList = [
     },
 
     {
+        projectID: 7,
+        projectName: 'Industry reporter ',
+        imageUrl: 'https://i.ibb.co/SwZ97Pr/Screenshot-2024-07-01-at-16-54-20-Industry-Reporter.png',
+        githubUrl: 'https://github.com/sanuja-gayantha/Industry-reporter',
+        techStack: ['Python', 'Angular', 'Typescript', 'Tailwindcss', 'Node.js', 'Selenium', 'Google sheet Api', 'Google drive Api', 'sqlite3', 'JSON', 'requests', 'bs4', 'multithreading', 'Rotating Proxy', 'uuid'
+        ],
+        desc2:"This is a web scraping tool running on Google Cloud. It finds PDFs on any website, downloads them, uploads them to Google Drive, and updates a Google Sheet. It also has web dashboard.",
+        bgColor:'#b1aaff',
+        textColor:'#170004',
+        demoUrlStatus:false,
+        gitHubUrlStatus:true
+    },
+
+    {
         projectID: 6,
         projectName: 'Easybank landing page',
         imageUrl: 'https://i.ibb.co/sKKCc4k/255885301-f884a9a6-710a-4dbe-af2a-21387256a5ab.webp',
