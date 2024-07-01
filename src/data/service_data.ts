@@ -122,6 +122,32 @@ const projectItemsList = [
         gitHubUrlStatus:true
     },
 
+    {
+        projectID: 9,
+        projectName: 'Hacker news',
+        imageUrl: 'https://i.ibb.co/XVyPx3v/Screenshot-2024-07-01-at-17-29-47-Hacker-News.webp',
+        githubUrl: 'https://github.com/sanuja-gayantha/hacker-news',
+        techStack: ['React', 'CSS'
+        ],
+        desc2:"This is a simple news app where users can read and search for interesting things.",
+        bgColor:'#f5f0ed',
+        textColor:'#f52424',
+        demoUrlStatus:false,
+        gitHubUrlStatus:true
+    },
+    {
+        projectID: 8,
+        projectName: 'Moroccan shop',
+        imageUrl: 'https://i.ibb.co/RTfyFX3/291032769-7a85d775-06c6-49b5-b17a-c5ac78779442.webp',
+        githubUrl: 'https://github.com/sanuja-gayantha/Moroccan-shop-frontend',
+        techStack: ['React', 'SCSS', 'Strapi', 'Authentication'
+        ],
+        desc2:"This is an e-commerce website that sells rugs 🧶. It uses React.js for the frontend and Strapi for the backend. | React, SCSS",
+        bgColor:'#c9d77e',
+        textColor:'#170004',
+        demoUrlStatus:false,
+        gitHubUrlStatus:true
+    },
 ]
 
 export default projectItemsList;
