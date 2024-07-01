@@ -2,7 +2,7 @@ const projectItemsList = [
     {
         projectID: 0,
         projectName: 'My portfolio',
-        imageUrl: 'https://i.ibb.co/jGRvQrs/screencapture-localhost-5173-2024-05-31-12-57-45-1.webp',
+        imageUrl: 'https://i.ibb.co/PMqTGzH/Screenshot-2024-07-01-at-16-40-41-SUNUJA.webp',
         githubUrl: 'https://github.com/sanuja-gayantha/React-portfolio',
         demoUrl: 'https://sanuja-dev.netlify.app/',
         desc2: 'This is my portfolio website created using React. It is fully mobile-responsive.',
