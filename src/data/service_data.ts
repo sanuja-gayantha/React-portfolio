@@ -28,21 +28,7 @@ const projectItemsList = [
         demoUrlStatus:true,
         gitHubUrlStatus:true
     },
-    {
-        projectID: 2,
-        projectName: 'EShop',
-        imageUrl: 'https://i.ibb.co/LQGkdFB/Screenshot-2023-12-30-at-00-33-26-ESHOP.webp',
-        githubUrl: '',
-        demoUrl: '',
-        desc1: 'Did you know? The first online retail transaction occurred in 1994 when a Sting CD was sold on NetMarket, marking the inception of ecommerce in the fashion industry.',
-        desc2: 'This fashion ecommerce website 🛍️ provides a seamless shopping experience, allowing customers to effortlessly explore and buy a wide range of trendy products.',
-        techStack: ['React', 'Typescript', 'Tailwindcss', 'Vite', 'CSS3', 'Node.js', 'MongoDB', 'REST API', 'JWT'
-        ],
-        bgColor:'#f5f0ed',
-        textColor:'#f52424',
-        demoUrlStatus:false,
-        gitHubUrlStatus:false
-    },
+
     {
         projectID: 3,
         projectName: 'Scooters',
@@ -56,6 +42,23 @@ const projectItemsList = [
         ],
         bgColor:'#b1aaff',
         textColor:'#170004',
+        demoUrlStatus:true,
+        gitHubUrlStatus:true
+    },
+    {
+        projectID: 2,
+        projectName: 'EShop',
+        imageUrl: 'https://i.ibb.co/LQGkdFB/Screenshot-2023-12-30-at-00-33-26-ESHOP.webp',
+        githubUrl: 'https://github.com/sanuja-gayantha/Ecommerce-fashion',
+        demoUrl: 'https://eshop-ecommerce-fashion.netlify.app/',
+        desc1: 'Did you know? The first online retail transaction occurred in 1994 when a Sting CD was sold on NetMarket, marking the inception of ecommerce in the fashion industry.',
+        desc2: 'This fashion ecommerce website 🛍️ provides a seamless shopping experience, allowing customers to effortlessly explore and buy a wide range of trendy products.',
+        // techStack: ['React', 'Typescript', 'Tailwindcss', 'Vite', 'CSS3', 'Node.js', 'MongoDB', 'REST API', 'JWT'
+        // ],
+        techStack: ['Angular', 'Typescript', 'Tailwindcss', 'CSS'
+    ],
+        bgColor:'#f5f0ed',
+        textColor:'#f52424',
         demoUrlStatus:true,
         gitHubUrlStatus:true
     },
@@ -96,7 +99,7 @@ const projectItemsList = [
         projectName: 'Easybank landing page',
         imageUrl: 'https://i.ibb.co/sKKCc4k/255885301-f884a9a6-710a-4dbe-af2a-21387256a5ab.webp',
         githubUrl: 'https://github.com/sanuja-gayantha/Easybank-landing-page',
-        techStack: ['HTML5', 'SCSS'
+        techStack: ['HTML5', 'SCSS', 'Javascript'
         ],
         desc2:"This is a recreation of the landing page of EasyBank. Explore its user-friendly design and discover the seamless banking experience it offers.",
         bgColor:'#54457a',

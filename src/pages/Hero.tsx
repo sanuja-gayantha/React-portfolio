@@ -22,7 +22,7 @@ const Hero = () => {
 
           <div className="image w-full h-full basis-3/4 md:pl-[100px] ">
 
-            <img src="https://i.ibb.co/p1989T3/73db1f39.jpg" className="" alt="" srcSet="" />
+            <img src="https://images.unsplash.com/photo-1520583457224-aee11bad5112?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="" alt="" srcSet="" />
           </div>
 
           <div className="intro basis-1/4 flex flex-col">
