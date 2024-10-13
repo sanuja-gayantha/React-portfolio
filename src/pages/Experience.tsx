@@ -19,12 +19,13 @@ const Experience = () => {
 
               <div className="item flex flex-col text-[14px] font-obviously uppercase mt-4" >
                 <span className="font-bold ">2021— CURRENT</span>
-                <span className="font-bold ">FREELANCE WEB DEVELOPER and WEB SCRAPING EXPERT - (PART TIME)</span>
+                <span className="font-bold "> Software Engineer: WEB and WEB SCRAPING - (FREELANCE)</span>
                 <span className="font-bold ">At FIVERR</span>
                 <ul className="details font-balto normal-case font-medium text-[16px] flex flex-col list-disc list-inside">
-                  <li>Currently, I do web scraping and web application development. Read the technical overview of my recent project.</li>
-                  <li onClick={() => openInNewTab("https://drive.google.com/file/d/1k8orzteKnTmJ9LeqdyVIiFDSn8pAn3VT/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">Technical overview</span></li>
+                  <li>Currently, I'm a Level 1 seller on Fiverr, specializing in web scraping and building web apps</li>
+{/*               <li onClick={() => openInNewTab("https://drive.google.com/file/d/1k8orzteKnTmJ9LeqdyVIiFDSn8pAn3VT/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">Technical overview</span></li>
                   <li onClick={() => openInNewTab("https://github.com/sanuja-gayantha/Industry-reporter")}><span className="font-semibold underline cursor-pointer">Check the Python code on GitHub</span></li>
+                 */}
                 </ul >
               </div>
 
@@ -42,7 +43,7 @@ const Experience = () => {
                   <li>Helped and trained newcomers to become familiar with the processes.</li>
                   <li>Participated in meetings.</li>
                   <li>Update websites / technical documents.</li>
-                  <li onClick={() => openInNewTab("https://drive.google.com/file/d/1YVIkR3URx62tyKNhkcK8CsxLjo50AWKT/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">Service letter</span></li>
+{/*                   <li onClick={() => openInNewTab("https://drive.google.com/file/d/1YVIkR3URx62tyKNhkcK8CsxLjo50AWKT/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">Service letter</span></li> */}
                 </ul >
               </div>
 
@@ -61,7 +62,7 @@ const Experience = () => {
                   <li>Successfully implemented new functionalities and made modifications to the source code. Wrote SQL queries.</li>
                   <li>Participated in meetings and collected new requirements / system issues.</li>
                   <li>Communicated directly with clients (IT manager, merchandisers, accountants, application users, etc.) to to provide guidance and support.</li>
-                  <li onClick={() => openInNewTab("https://drive.google.com/file/d/1tUwhjfbM8M5hsf7Bk1QmS9soCqTcKa7B/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">GAPRO system process.</span> </li>
+{/*                   <li onClick={() => openInNewTab("https://drive.google.com/file/d/1tUwhjfbM8M5hsf7Bk1QmS9soCqTcKa7B/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">GAPRO system process.</span> </li> */}
                   <li><span className="font-semibold underline">Personal Achievement:</span> At the request of the IT manager at Chiefway Katunayake (Pvt) Ltd, I developed a Python-based software tool to automate the conversion of the company's employees' salary, bonus, incentive, and OT Excel files into a special text format. This allows the quickly generated .txt files to be easily and promptly sent to the bank without any delays.</li>
                 </ul >
               </div>
