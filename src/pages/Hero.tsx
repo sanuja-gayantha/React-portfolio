@@ -12,9 +12,9 @@ const Hero = () => {
       <div className="hero-container  flex flex-col lg:flex-row py-2 max-w-[1366px] relative px-2 md:px-4 ">
 
         <div className="hello-description  absolute top-5 left-0 font-obviously font-black flex flex-col">
-          <span className="lg:text-[120px] md:text-[100px] text-[40px] ml-[10px] lg:ml-[20px] text-primary2 uppercase">HELLO</span>          
-          <span className="lg:text-[50px] md:text-[40px] text-[20px] ml-[10px] lg:ml-[20px] text-primary2 uppercase">Welcome</span>
-          <span className="lg:text-[50px] md:text-[40px] text-[20px] ml-[10px] lg:ml-[20px] text-primary2 uppercase">To my portfolio..</span>
+          <span className="lg:text-[120px] md:text-[100px] text-[50px] ml-[10px] lg:ml-[20px] text-primary2 uppercase">HELLO</span>          
+          <span className="lg:text-[50px] md:text-[40px] text-[30px] ml-[10px] lg:ml-[20px] text-primary2 uppercase">Welcome</span>
+          <span className="lg:text-[50px] md:text-[40px] text-[30px] ml-[10px] lg:ml-[20px] text-primary2 uppercase">To my portfolio..</span>
         </div>
 
         <div className="hero-content  flex flex-col lg:flex-row gap-4">
