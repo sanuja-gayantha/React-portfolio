@@ -30,7 +30,7 @@ const Hero = () => {
             <div className="info basis-2/3 flex flex-col space-y-6">
 
               <span className="font-saintecolombe font-black text-[52px]">I'm <span className="text-primary">Sanuja</span></span>
-              <span className="font-obviously text-[14px] mb-3">A self-motivated Software Engineer (Web & Web Scraping) based in <span onClick={() => openInNewTab("https://www.google.com/search?q=sri+lanka")} className="underline cursor-pointer">Sri Lanka.</span></span>
+              <span className="font-obviously text-[14px] mb-3">I'm a self motivated IT professional based in <span onClick={() => openInNewTab("https://www.google.com/search?q=sri+lanka")} className="underline cursor-pointer">Sri Lanka.</span></span>
               <span className="font-obviously text-[14px]">I specialize in web scraping and building modern, responsive web applications. <span className="font-balto font-medium">Take a look around, explore my work, and feel free to reach out if you'd like to collaborate or just chat about tech.</span></span>
               <a href="#contact">
                 <Button value="Contact Me" />
