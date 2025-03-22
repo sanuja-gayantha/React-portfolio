@@ -27,13 +27,13 @@ const Life = () => {
 
           <div className="left flex basis-1/2 flex-col">
 
-            <span className="font-obviously text-[14px] mb-3">I describe myself as a self-learning, and passionate developer who loves coding and designing. My journey with technology began in my early days when I first started working with computers.</span>
+            <span className="font-obviously text-[14px] mb-3">I describe myself as a self learning, and passionate developer. My journey with technology began in my early days when I first started working with computers.</span>
 
             <span className="font-obviously text-[14px] mb-3">The thrill of solving problems and creating something out of nothing quickly turned into a lifelong passion for coding.</span>
 
-            <span className="font-balto text-[14px] mb-3 font-medium">Over the years, my fascination with technology has only grown stronger. I constantly seek to expand my knowledge and skills, delving deeper into the intricate world of software development. </span>
+            <span className="font-balto text-[14px] mb-3 font-medium">Over the years, my fascination with technology has only grown stronger. I constantly seek to expand my knowledge and skills. </span>
 
-            <span className="font-balto text-[14px] mb-6 font-medium">I am always excited to take on new challenges and collaborate with others who share my passion for technology. <span className="underline text-primary font-bold">Let's create something amazing together!</span></span>
+            <span className="font-balto text-[14px] mb-6 font-medium">I am always excited to take on new challenges and collaborate with others who share my passion. <span className="underline text-primary font-bold">Let's create something amazing together!</span></span>
 
             <div className="techstackinfo-container flex flex-col gap-3">
 
