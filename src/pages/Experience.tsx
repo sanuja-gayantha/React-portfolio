@@ -19,13 +19,8 @@ const Experience = () => {
 
               <div className="item flex flex-col text-[14px] font-obviously uppercase mt-4" >
                 <span className="font-bold ">2021— CURRENT</span>
-                <span className="font-bold "> Freelancer: Data and WEB SCRAPING </span>
-                <span className="font-bold ">At FIVERR</span>
-                <ul className="details font-balto normal-case font-medium text-[16px] flex flex-col list-disc list-inside">
-                  <li></li>
-{/*               
-                 */}
-                </ul >
+                <span className="font-bold ">FREELANCE DEVELOPER At FIVERR</span>
+                
               </div>
 
 
@@ -42,7 +37,7 @@ const Experience = () => {
                   <li>Helped and trained newcomers to become familiar with the processes.</li>
                   <li>Participated in meetings.</li>
                   <li>Update websites / technical documents.</li>
-{/*                   <li onClick={() => openInNewTab("https://drive.google.com/file/d/1YVIkR3URx62tyKNhkcK8CsxLjo50AWKT/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">Service letter</span></li> */}
+                  <li onClick={() => openInNewTab("https://drive.google.com/file/d/1YVIkR3URx62tyKNhkcK8CsxLjo50AWKT/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">Service letter</span></li>
                 </ul >
               </div>
 
@@ -53,13 +48,16 @@ const Experience = () => {
                 <span className="font-bold ">Softknowedge Business Solutions (Pvt) Ltd, Kurunegala, Sri Lanka</span>
                 <ul className="details font-balto normal-case font-medium text-[16px] flex flex-col list-disc list-inside mt-4">
                   <li>Developed cloud-based ERP systems for apparel manufacturing companies.</li>
-                  <li>Visited and managed the Chiefway Katunayake (Pvt) Ltd (Apparel) </a>
+                  <li>Visited and managed the
+                    <a className="underline cursor-pointer font-semibold"> Chiefway Katunayake (Pvt) Ltd (Apparel) </a>
                     ERP project database.
                   </li>
 
                   <li>Successfully implemented new functionalities and made modifications to the source code. Wrote SQL queries.</li>
                   <li>Participated in meetings and collected new requirements / system issues.</li>
                   <li>Communicated directly with clients (IT manager, merchandisers, accountants, application users, etc.) to to provide guidance and support.</li>
+                  <li onClick={() => openInNewTab("https://drive.google.com/file/d/1tUwhjfbM8M5hsf7Bk1QmS9soCqTcKa7B/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">GAPRO system process.</span> </li>
+                  <li><span className="font-semibold underline">Personal Achievement:</span> At the request of the IT manager at Chiefway Katunayake (Pvt) Ltd, I developed a Python-based software tool to automate the conversion of the company's employees' salary, bonus, incentive, and OT Excel files into a special text format. This allows the quickly generated .txt files to be easily and promptly sent to the bank without any delays.</li>
                 </ul >
               </div>
 
