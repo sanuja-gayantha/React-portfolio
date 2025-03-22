@@ -19,12 +19,11 @@ const Experience = () => {
 
               <div className="item flex flex-col text-[14px] font-obviously uppercase mt-4" >
                 <span className="font-bold ">2021— CURRENT</span>
-                <span className="font-bold "> Software Engineer: WEB and WEB SCRAPING - (FREELANCE)</span>
+                <span className="font-bold "> Freelancer: Data and WEB SCRAPING </span>
                 <span className="font-bold ">At FIVERR</span>
                 <ul className="details font-balto normal-case font-medium text-[16px] flex flex-col list-disc list-inside">
-                  <li>Currently, I'm a Level 1 seller on Fiverr, specializing in web scraping and building web apps</li>
-{/*               <li onClick={() => openInNewTab("https://drive.google.com/file/d/1k8orzteKnTmJ9LeqdyVIiFDSn8pAn3VT/view?usp=sharing")}><span className="font-semibold underline cursor-pointer">Technical overview</span></li>
-                  <li onClick={() => openInNewTab("https://github.com/sanuja-gayantha/Industry-reporter")}><span className="font-semibold underline cursor-pointer">Check the Python code on GitHub</span></li>
+                  <li></li>
+{/*               
                  */}
                 </ul >
               </div>
