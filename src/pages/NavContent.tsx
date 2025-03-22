@@ -66,10 +66,7 @@ const NavContent = () => {
                                 </a>
                             </div>
 
-                            <div className="social max-w-[1366px] lg:pl-8 p-2 md:px-4 flex flex-row gap-2">
-                                <TiSocialLinkedin onClick={() => openInNewTab("https://www.linkedin.com/in/sanuja-gayantha-630115201/")} className="border-2 border-black rounded-full min-h-[25px] min-w-[25px] cursor-pointer" />
-                                <TbBrandGithubFilled onClick={() => openInNewTab("https://github.com/sanuja-gayantha")} className="border-2 border-black min-h-[25px] min-w-[25px] rounded-full cursor-pointer" />
-                            </div>
+                            <div className="social max-w-[1366px] lg:pl-8 p-2 md:px-4 flex flex-row gap-2">                            </div>
 
                             <div className="nav-items h-full flex flex-col gap-4 lg:gap-0">
                                 {navItemsList.map((item, index) => (
